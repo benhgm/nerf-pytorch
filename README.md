@@ -7,6 +7,10 @@ A spelled-out study of neural radiance fields (NeRFs). Contains a PyTorch implem
 # positional encodings
 A key contributor to the success of neural radiance fields is positional encoding. In the paper, the authors explained that positional encoding helps transform the 5-dimensional input positional data (x, y, z, $\theta$, $\phi$) to a higher frequency domain, which in turn allows a neural network to learn data with higher frequency variation, such as color and geometry.
 
-The encoding function used is as follows
+A common technique to perform positional encoding is to a vector of sinusoidal functions of varying frequency bands to transform a scalar value to a vector of positional embeddings.
+
+![positional encoding](positional_encoding.gif)
+
+The encoding function used in NeRF is as follows
 $$\gamma(p) = (sin(2^0 \pi p), cos(2^0 \pi p), sin(2^1 \pi p), cos(2^1 \pi p), ... , sin(2^{L-1} \pi p), cos(2^{L-1} \pi p))$$
 
