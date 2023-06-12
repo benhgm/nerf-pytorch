@@ -9,7 +9,7 @@ A key contributor to the success of neural radiance fields is positional encodin
 
 A common technique to perform positional encoding is to a vector of sinusoidal functions of varying frequency bands to transform a scalar value to a vector of positional embeddings.
 
-![positional encoding](positional_encoding.gif)
+![positional encoding](positionalencoding.gif)
 
 The encoding function used in NeRF is as follows
 $$\gamma(p) = (sin(2^0 \pi p), cos(2^0 \pi p), sin(2^1 \pi p), cos(2^1 \pi p), ... , sin(2^{L-1} \pi p), cos(2^{L-1} \pi p))$$
