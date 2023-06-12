@@ -11,6 +11,8 @@ A common technique to perform positional encoding is to a vector of sinusoidal f
 
 ![positional encoding](positionalencoding.gif)
 
+In the above example, we use a sinusoidal function of 4 frequency bands, represented by the red, yellow, green and blue curves, to transform a single point to 4-dimensions. As the point progresses along the x-axis, we can see higher frequency changes in its positional embeddings (black points).
+
 The encoding function used in NeRF is as follows
 $$\gamma(p) = (sin(2^0 \pi p), cos(2^0 \pi p), sin(2^1 \pi p), cos(2^1 \pi p), ... , sin(2^{L-1} \pi p), cos(2^{L-1} \pi p))$$
 
